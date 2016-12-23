@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.serialchat.catapp.serialchat.login">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="286dp"
+        android:layout_height="286dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/chat2">
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Iniciar Sesión"
+            android:textSize="29dp" />
+
+        <TextView
+            android:text="Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/et_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="usuario o correo electronico"
+            android:textColorHint="@color/colorhint"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_account_circle_grey_600_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext" />
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_grey_600_24dp"
+            android:drawablePadding="12dp"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorhint"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorhint"
+                android:checked="false"
+                android:text="Recordar"
+                android:textColor="@drawable/tab_colore"
+                android:textSize="14sp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_ResetPass"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColorLink="@color/colorAccent"
+                android:layout_weight="1"
+                android:textColor="@drawable/tab_colore"
+                android:textSize="14sp"
+                android:text="¿Contraseña Olvidada?" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_Login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="ingresar"
+            android:textColor="#ffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SerialChat</string>
+    <string name="app_desc">Serial chat permite cifrar todas tus conversaciones con tus contactos, elige el sistema de cifrado
+    que mas te guste o elabora tu propio cifrado y compartelo con tus contactos.</string>
+    <string name="title_activity_chat_main">chatMain</string>
+</resources>
